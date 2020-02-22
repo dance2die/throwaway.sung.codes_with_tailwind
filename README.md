@@ -1,53 +1,17 @@
-# Tailwind CSS Playground
+# Sung.codes Nav with Tailwind CSS
 
-A simple starter project for playing around with Tailwind in a proper PostCSS environment.
+## What?
 
-To get started:
+Re-implementation of sung.codes header with Tailwind CSS
 
-1. Clone the repository:
+## Thoughts
 
-    ```bash
-    git clone https://github.com/tailwindcss/playground.git tailwindcss-playground
+I am still not yet versed in TW thus had hard time keeping classes organized and they are all over.
 
-    cd tailwindcss-playground
-    ```
+Easier to get started but using it on one HTML file seems to be an overkill.
 
-2. Install the dependencies:
+TW seems to shine with a component model, where you deal with a small bits of HTML code.
 
-    ```bash
-    # Using npm
-    npm install
+## Credit
 
-    # Using Yarn
-    yarn
-    ```
-
-3. Start the development server:
-
-    ```bash
-    # Using npm
-    npm run serve
-
-    # Using Yarn
-    yarn run serve
-    ```
-
-    Now you should be able to see the project running at localhost:8080.
-
-4. Open `public/index.html` in your editor and start experimenting!
-
-## Building for production
-
-Even though this isn't necessarily a starter kit for a proper project, we've included an example of setting up both [Purgecss](https://www.purgecss.com/) and [cssnano](https://cssnano.co/) to optimize your CSS for production.
-
-To build an optimized version of your CSS, simply run:
-
-```bash
-# Using npm
-npm run production
-
-# Using Yarn
-yarn run production
-```
-
-After that's done, check out `./public/build/tailwind.css` to see the optimized output.
+Design taken from https://mxb.dev/
