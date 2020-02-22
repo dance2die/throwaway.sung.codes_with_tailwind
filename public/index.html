@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="/build/tailwind.css" />
+    <title>Welcome to Tailwind!</title>
+  </head>
+  <body class="antialiased p-0 m-0 bg-gray-500">
+    <!-- https://source.unsplash.com/random/100x100 -->
+
+    <div class="w-full h-24 px-6 bg-gray-800 flex justify-between items-center">
+      <h2 class="text-white text-2xl font-serif">{sung.codes}</h2>
+      <!-- full-page/height menu -->
+      <div
+        id="menu"
+        class="
+          hidden md:inline-block bg-gray-800 
+          text-white font-2xl w-full h-screen  md:w-auto md:h-auto absolute md:static top-0 left-0"
+      >
+        <nav
+          class="h-full flex flex-col md:flex-row justify-center items-center"
+        >
+          <ul
+            class="h-full w-full flex flex-col md:flex-row justify-center laeding-loose"
+          >
+            <li class="px-15% p-4 md:p-0 flex items-center">
+              <span
+                class="text-sm mr-3 md:mr-2 text-gray-500 md:font-bold md:text-white"
+                >01 </span
+              ><a
+                href="#"
+                class="hover:underline text-4xl md:mr-8 md:text-base font-semibold md:text-gray-300 md:font-normal font-serif"
+                >Home</a
+              >
+            </li>
+            <li class="px-15% p-4 md:p-0 flex items-center">
+              <span
+                class="text-sm mr-3 md:mr-2 text-gray-500 md:font-bold md:text-white"
+                >02 </span
+              ><a
+                href="#"
+                class="hover:underline text-4xl md:mr-8 md:text-base font-semibold md:text-gray-300 md:font-normal font-serif"
+                >Writing</a
+              >
+            </li>
+            <li class="px-15% p-4 md:p-0 flex items-center">
+              <span
+                class="text-sm mr-3 md:mr-2 text-gray-500 md:font-bold md:text-white"
+                >03 </span
+              ><a
+                href="#"
+                class="hover:underline text-4xl md:mr-8 md:text-base font-semibold md:text-gray-300 md:font-normal font-serif"
+                >Social</a
+              >
+            </li>
+            <li class="px-15% p-4 md:p-0 flex items-center">
+              <span
+                class="text-sm mr-3 md:mr-2 text-gray-500 md:font-bold md:text-white"
+                >04 </span
+              ><a
+                href="#"
+                class="hover:underline text-4xl md:mr-8 md:text-base font-semibold md:text-gray-300 md:font-normal font-serif"
+                >About</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="menu-closed" class="cursor-pointer text-3xl z-20 md:hidden">
+        🍔
+      </div>
+      <div id="menu-open" class="hidden cursor-pointer text-3xl z-20 md:hidden">
+        ❌
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const closedMenu = document.getElementById("menu-closed");
+        const openMenu = document.getElementById("menu-open");
+        const menu = document.getElementById("menu");
+
+        console.log(`closedMenu, openMenu`, closedMenu, openMenu);
+
+        closedMenu.onclick = function(e) {
+          this.classList.toggle("hidden");
+          openMenu.classList.toggle("hidden");
+          menu.classList.toggle("hidden");
+        };
+
+        openMenu.onclick = function(e) {
+          this.classList.toggle("hidden");
+          closedMenu.classList.toggle("hidden");
+          menu.classList.toggle("hidden");
+        };
+      });
+    </script>
+  </body>
+</html>
